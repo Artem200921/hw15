@@ -1,12 +1,12 @@
 import React from "react";
-import { GifList } from "../styles/GifList";
+import { GifListStyles } from "../styles/GifListStyles";
 
 export default class GifList extends React.Component {
   render() {
     const { api } = this.props;
     console.log(api);
     return (
-      <GifList>
+      <GifListStyles>
         {api.map((e) => {
           return (
             <li key={e.id}>
@@ -15,7 +15,7 @@ export default class GifList extends React.Component {
             </li>
           );
         })}
-      </GifList>
+      </GifListStyles>
     );
   }
 }
