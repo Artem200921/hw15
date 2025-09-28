@@ -1,7 +1,7 @@
 import React from "react";
 import { GifList } from "../styles/GifList";
 
-export class GifList extends React.Component {
+export default class GifList extends React.Component {
   render() {
     const { api } = this.props;
     console.log(api);
